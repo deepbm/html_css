@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+.container {
+  background-color: #555;
+  height: 2000px;
+  margin-top: 600px;
+  margin-bottom: 60px;
+}
+
+.sticky {
+  position: sticky;  /* 좌표 속성과 같이 사용해야 한다. */
+  top: 200px;  /* 스크롤되어 요소가 보이는 순간 viewport 200px 위치에서 고정되며, 부모 박스 넘어 스크롤 되면 사라진다. */
+}
