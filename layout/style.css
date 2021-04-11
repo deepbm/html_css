@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* container 요소에 전체 폭을 지정하는 것이 좋다 */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;  /* 생략 가능 */
+  height: 60px;
+  background-color: lightpink;
+}
+
+.menu {
+  list-style: none;
+  text-align: center;  /* 부모 태그에 적용 */
+  line-height: 60px;  /* height와 같은 값을 지정해주면 세로 가운데 정렬이 된다. */
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu li a {
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+}
+
+.main::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.left {
+  width: 30%;
+  height: 500px;
+  float: left;
+  background-color: lightgreen;
+}
+
+.right {
+  width: 70%;
+  height: 500px;
+  float: left;
+  background-color: lightskyblue;
+}
+
+footer {
+  height: 150px;
+  background-color: lightpink;
+}
