@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 7fr;  /* 열의 폭, 갯수 */
+  grid-template-areas:  /* 해당 영역에 grid-area 속성을 지정해줘야 한다. */
+    "header header"
+    "left right"
+    "footer footer"
+}
+
+header {
+  height: 60px;
+  grid-area: header;
+  background-color: lightpink;
+}
+
+.menu {
+  list-style: none;
+  text-align: center;
+  line-height: 60px;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu li a {
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+}
+
+.left {
+  height: 500px;
+  grid-area: left;
+  background-color: lightgreen;
+}
+
+.right {
+  height: 500px;
+  grid-area: right;
+  background-color: lightskyblue;
+}
+
+footer {
+  height: 150px;
+  grid-area: footer;
+  background-color: lightpink;
+}
