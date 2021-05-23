@@ -4,13 +4,15 @@ html5와 css3를 공부하면서 기억하고 싶은 코드
 <br />
 
 # contents
-- [contact us](#contact-us)
-- [video background](#video-background)
-- [sticky](#sticky)
-- [layout](#layout)
+- [contact us](#contact-us-example)
+- [video background](#video-background-example)
+- [sticky](#sticky-example)
+- [layout](#layout-example)
 <br />
 <br />
 <br />
+
+<a name="contact-us-example"></a>
 
 # contact us
 간단한 contact us form 구현
@@ -19,6 +21,8 @@ html5와 css3를 공부하면서 기억하고 싶은 코드
 공통된 스타일은 클래스를 지정해 코드의 중복 사용을 줄인다.
 
 <br />
+
+<a name="video-background-example"></a>
 
 # video background
 비디오 배경 기능 구현
@@ -30,6 +34,8 @@ html5와 css3를 공부하면서 기억하고 싶은 코드
 
 <br />
 
+<a name="sticky-example"></a>
+
 # sticky
 position의 sticky 속성을 활용해 스크롤시 요소가 화면에 고정되는 기능 구현
 
@@ -38,6 +44,8 @@ position의 sticky 속성을 활용해 스크롤시 요소가 화면에 고정�
 - 해당 코드는 뷰포트 200px 위치가 되면 고정되다가 부모 요소와 함께 스크롤되어 사라진다.
 
 <br />
+
+<a name="layout-example"></a>
 
 # layout
 float 속성을 이용해 layout 설계
@@ -54,6 +62,14 @@ float 속성을 이용해 layout 설계
 
 # layout - flex
 flex 속성을 이용해 layout 설계
+
+### > 기억하고 싶은 부분
+- margin-left 속성값을 auto로 지정하면 해당 요소가 오른쪽 정렬된다. (navbar.html)
+  ```css
+  .nav-right {
+    margin-left: auto;
+  }
+  ```
 
 <br />
 
